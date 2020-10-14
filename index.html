@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <style>
+    .input{
+      outline: none;
+      width: 233px;
+      height: 70px;
+      text-align: right;
+      font-size: 30px;
+    }
+    form{
+      background-color: rgb(2, 48, 85);
+      width: 241px;
+      height: 401px;
+      position: relative;
+      box-shadow: 0 0 5px 1px black;
+    }
+   span{
+     margin: 0;
+     cursor: pointer;
+     font-size: 25px;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 0 1px 0px black;
+   }
+   span:active{
+     background-color: chartreuse;
+   }
+   .cler{
+     background-color: crimson;
+     padding: 10px 53px;
+   }
+   .secondwow{
+    padding: 8px 22px;
+   }
+  
+   .second{
+    padding: 20px;
+   }
+   .second-h{
+     position: absolute;
+     right: 0;
+     padding: 54px 26px;
+   }
+   .second-w{
+     padding: 20px 28px;
+   }
+   .equel{
+     background-color: rgb(1, 200, 200);
+     padding: 20px 22px;
+   }
+  </style>
+</head>
+
+<body>
+
+ <form id="from" name="cal">
+    <input type="text" name="in" class="input"><br/>
+    <span class="cler"      onclick="document.cal.in.value ='' ">C</span>
+    <span class="secondwow" onclick="document.cal.in.value += '/'">/</span>
+    <span class="secondwow" onclick="document.cal.in.value += '*'">*</span><br/>
+    <span  class="second"   onclick="document.cal.in.value += '7'">7</span>
+    <span  class="second"   onclick="document.cal.in.value += '8'">8</span>
+    <span  class="second"   onclick="document.cal.in.value += '9'">9</span>
+    <span  class="second-w" onclick="document.cal.in.value += '-'">-</span><br/>
+    <span class="second"    onclick="document.cal.in.value += '4'">4</span>
+    <span class="second"    onclick="document.cal.in.value += '5'">5</span>
+    <span class="second"    onclick="document.cal.in.value += '6'">6</span>
+    <span class="second second-h" onclick="document.cal.in.value += '+'">+</span><br/>
+    <span class="second"    onclick="document.cal.in.value += '3'">3</span>
+    <span class="second"    onclick="document.cal.in.value += '2'">2</span>
+    <span class="second"    onclick="document.cal.in.value += '1'">1</span><br/>
+    <span class="second"    onclick="document.cal.in.value += '0'">0</span>
+    <span class="second"    onclick="document.cal.in.value += '00'">00</span>
+    <span class="second"    onclick="document.cal.in.value += '.'">.</span>
+    <span class="second equel" onclick="document.cal.in.value = eval(cal.in.value)">=</span>
+ </form>
+
+
+  <script>
+
+   
+
+  </script>
+</body>
+</html>
